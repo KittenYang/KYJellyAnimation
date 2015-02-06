@@ -14,6 +14,8 @@
 		5F05E2771A83C70800DE7325 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F05E2761A83C70800DE7325 /* Images.xcassets */; };
 		5F05E27A1A83C70800DE7325 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F05E2781A83C70800DE7325 /* LaunchScreen.xib */; };
 		5F05E2861A83C70800DE7325 /* KYJellyAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05E2851A83C70800DE7325 /* KYJellyAnimationTests.m */; };
+		5FD648531A84B9A700E844B0 /* KYProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD648521A84B9A700E844B0 /* KYProgressLayer.m */; };
+		5FD648561A84DCDE00E844B0 /* JellyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD648551A84DCDE00E844B0 /* JellyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		5F05E27F1A83C70800DE7325 /* KYJellyAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYJellyAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F05E2841A83C70800DE7325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F05E2851A83C70800DE7325 /* KYJellyAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYJellyAnimationTests.m; sourceTree = "<group>"; };
+		5FD648511A84B9A700E844B0 /* KYProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYProgressLayer.h; sourceTree = "<group>"; };
+		5FD648521A84B9A700E844B0 /* KYProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYProgressLayer.m; sourceTree = "<group>"; };
+		5FD648541A84DCDE00E844B0 /* JellyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JellyView.h; sourceTree = "<group>"; };
+		5FD648551A84DCDE00E844B0 /* JellyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JellyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 				5F05E26E1A83C70800DE7325 /* AppDelegate.m */,
 				5F05E2701A83C70800DE7325 /* ViewController.h */,
 				5F05E2711A83C70800DE7325 /* ViewController.m */,
+				5FD648541A84DCDE00E844B0 /* JellyView.h */,
+				5FD648551A84DCDE00E844B0 /* JellyView.m */,
 				5F05E2731A83C70800DE7325 /* Main.storyboard */,
+				5FD648511A84B9A700E844B0 /* KYProgressLayer.h */,
+				5FD648521A84B9A700E844B0 /* KYProgressLayer.m */,
 				5F05E2761A83C70800DE7325 /* Images.xcassets */,
 				5F05E2781A83C70800DE7325 /* LaunchScreen.xib */,
 				5F05E2691A83C70800DE7325 /* Supporting Files */,
@@ -221,7 +231,9 @@
 			files = (
 				5F05E2721A83C70800DE7325 /* ViewController.m in Sources */,
 				5F05E26F1A83C70800DE7325 /* AppDelegate.m in Sources */,
+				5FD648531A84B9A700E844B0 /* KYProgressLayer.m in Sources */,
 				5F05E26C1A83C70800DE7325 /* main.m in Sources */,
+				5FD648561A84DCDE00E844B0 /* JellyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinyu Li (XWYND9KE57)";
 				INFOPLIST_FILE = KYJellyAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +425,7 @@
 				5F05E28B1A83C70800DE7325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F05E28C1A83C70800DE7325 /* Build configuration list for PBXNativeTarget "KYJellyAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +434,7 @@
 				5F05E28E1A83C70800DE7325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

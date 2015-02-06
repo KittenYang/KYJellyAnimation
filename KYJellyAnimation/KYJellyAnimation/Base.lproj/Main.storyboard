@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,73 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yy7-oO-Ymj" userLabel="CenterView">
+                                <rect key="frame" x="280" y="426" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E0I-1m-ymd"/>
+                                    <constraint firstAttribute="width" constant="40" id="w4l-ty-YmG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ll2-Qg-1eu" userLabel="SideView">
+                                <rect key="frame" x="0.0" y="426" width="40" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZWC-bl-vgT"/>
+                                    <constraint firstAttribute="width" constant="40" id="tW3-ZN-D5O"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWX-zS-sPi">
+                                <rect key="frame" x="260" y="283" width="80" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Mor-Hj-3n0"/>
+                                    <constraint firstAttribute="height" constant="34" id="hqN-9t-FaD"/>
+                                </constraints>
+                                <state key="normal" title="Hit me!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitMeClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JrR-fM-uIz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7A-Nm-w40" userLabel="JellyView" customClass="JellyView">
+                                <rect key="frame" x="0.0" y="500" width="600" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="MaZ-mG-Zf4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r7A-Nm-w40" firstAttribute="top" secondItem="yy7-oO-Ymj" secondAttribute="bottom" constant="-100" id="5jt-YW-im8"/>
+                            <constraint firstItem="Ll2-Qg-1eu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8O6-Q6-N8v"/>
+                            <constraint firstItem="r7A-Nm-w40" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8W2-e1-8Lq"/>
+                            <constraint firstAttribute="centerX" secondItem="tWX-zS-sPi" secondAttribute="centerX" id="EQZ-Pk-Lqk"/>
+                            <constraint firstAttribute="centerY" secondItem="tWX-zS-sPi" secondAttribute="centerY" id="HrW-ma-Le7"/>
+                            <constraint firstItem="r7A-Nm-w40" firstAttribute="top" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-100" id="HyC-fh-4a6"/>
+                            <constraint firstAttribute="centerX" secondItem="yy7-oO-Ymj" secondAttribute="centerX" id="UpG-Rk-CmU"/>
+                            <constraint firstItem="yy7-oO-Ymj" firstAttribute="top" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-174" id="abm-bl-Qye"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yy7-oO-Ymj" secondAttribute="bottom" constant="-100" id="eRg-8V-MSP"/>
+                            <constraint firstItem="Ll2-Qg-1eu" firstAttribute="top" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-174" id="ldq-aw-3A4"/>
+                            <constraint firstAttribute="trailing" secondItem="r7A-Nm-w40" secondAttribute="trailing" id="qSW-iR-iO3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eRg-8V-MSP"/>
+                                <exclude reference="5jt-YW-im8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="centerHelperView" destination="yy7-oO-Ymj" id="OgZ-Il-kE0"/>
+                        <outlet property="centerHelperViewTopConstraint" destination="abm-bl-Qye" id="CW9-Ds-ysb"/>
+                        <outlet property="jellyView" destination="r7A-Nm-w40" id="8gM-GH-L6r"/>
+                        <outlet property="jellyViewTopConstraint" destination="HyC-fh-4a6" id="EVy-1j-8eX"/>
+                        <outlet property="sideHelperView" destination="Ll2-Qg-1eu" id="Yst-hC-EJ9"/>
+                        <outlet property="sideHelperViewTopConstraint" destination="ldq-aw-3A4" id="c9S-Kf-bGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
