@@ -73,7 +73,7 @@
     //先处理旁边那个辅助方块的约束
     self.sideHelperViewTopConstraint.constant = newTopMargin;
     [self beforeAnimation];
-    [UIView animateWithDuration:0.5 delay:0.0f usingSpringWithDamping:0.75f initialSpringVelocity:0.8f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
         [self.sideHelperView layoutIfNeeded];
     } completion:^(BOOL finished) {
         [self finishAnimation];
@@ -82,7 +82,7 @@
     //再处理中间那个辅助方块的约束
     self.centerHelperViewTopConstraint.constant = newTopMargin;
     [self beforeAnimation];
-    [UIView animateWithDuration:0.5 delay:0.0f usingSpringWithDamping:0.9f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.7f initialSpringVelocity:2.0f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
         [self.centerHelperView layoutIfNeeded];
     } completion:^(BOOL finished) {
         [self finishAnimation];

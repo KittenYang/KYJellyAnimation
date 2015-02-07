@@ -29,7 +29,7 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
 
-    CGFloat yOffset = 20.0;
+    CGFloat yOffset = 30.0;
     CGFloat width   = CGRectGetWidth(rect);
     CGFloat height  = CGRectGetHeight(rect);
     

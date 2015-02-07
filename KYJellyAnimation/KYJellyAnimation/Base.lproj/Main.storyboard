@@ -46,10 +46,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7A-Nm-w40" userLabel="JellyView" customClass="JellyView">
-                                <rect key="frame" x="0.0" y="500" width="600" height="240"/>
+                                <rect key="frame" x="0.0" y="500" width="600" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="MaZ-mG-Zf4"/>
+                                    <constraint firstAttribute="height" constant="300" id="MaZ-mG-Zf4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -69,8 +69,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="eRg-8V-MSP"/>
                                 <exclude reference="5jt-YW-im8"/>
+                                <exclude reference="eRg-8V-MSP"/>
                             </mask>
                         </variation>
                     </view>
