@@ -10,6 +10,7 @@
 
 
 
+
 @implementation JellyView{
     UIColor *fillColor;
 
@@ -47,6 +48,7 @@
     CGContextAddPath(context, path.CGPath);
     [fillColor set];
     CGContextFillPath(context);
+    
 }
 
 

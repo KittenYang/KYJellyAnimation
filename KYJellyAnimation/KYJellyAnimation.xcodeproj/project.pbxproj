@@ -14,6 +14,8 @@
 		5F05E2771A83C70800DE7325 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F05E2761A83C70800DE7325 /* Images.xcassets */; };
 		5F05E27A1A83C70800DE7325 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F05E2781A83C70800DE7325 /* LaunchScreen.xib */; };
 		5F05E2861A83C70800DE7325 /* KYJellyAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F05E2851A83C70800DE7325 /* KYJellyAnimationTests.m */; };
+		5F8735E91A8B4867000CADF4 /* MotionBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8735E61A8B4867000CADF4 /* MotionBlurFilter.m */; };
+		5F8735EA1A8B4867000CADF4 /* UIView+MotionBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8735E81A8B4867000CADF4 /* UIView+MotionBlur.m */; };
 		5FD648531A84B9A700E844B0 /* KYProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD648521A84B9A700E844B0 /* KYProgressLayer.m */; };
 		5FD648561A84DCDE00E844B0 /* JellyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD648551A84DCDE00E844B0 /* JellyView.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,10 @@
 		5F05E27F1A83C70800DE7325 /* KYJellyAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYJellyAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F05E2841A83C70800DE7325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F05E2851A83C70800DE7325 /* KYJellyAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYJellyAnimationTests.m; sourceTree = "<group>"; };
+		5F8735E51A8B4867000CADF4 /* MotionBlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionBlurFilter.h; sourceTree = "<group>"; };
+		5F8735E61A8B4867000CADF4 /* MotionBlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionBlurFilter.m; sourceTree = "<group>"; };
+		5F8735E71A8B4867000CADF4 /* UIView+MotionBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MotionBlur.h"; sourceTree = "<group>"; };
+		5F8735E81A8B4867000CADF4 /* UIView+MotionBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MotionBlur.m"; sourceTree = "<group>"; };
 		5FD648511A84B9A700E844B0 /* KYProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYProgressLayer.h; sourceTree = "<group>"; };
 		5FD648521A84B9A700E844B0 /* KYProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYProgressLayer.m; sourceTree = "<group>"; };
 		5FD648541A84DCDE00E844B0 /* JellyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JellyView.h; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 		5F05E2681A83C70800DE7325 /* KYJellyAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				5F8735EB1A8B4876000CADF4 /* MotionBlur */,
 				5F05E26D1A83C70800DE7325 /* AppDelegate.h */,
 				5F05E26E1A83C70800DE7325 /* AppDelegate.m */,
 				5F05E2701A83C70800DE7325 /* ViewController.h */,
@@ -127,6 +134,17 @@
 				5F05E2841A83C70800DE7325 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F8735EB1A8B4876000CADF4 /* MotionBlur */ = {
+			isa = PBXGroup;
+			children = (
+				5F8735E51A8B4867000CADF4 /* MotionBlurFilter.h */,
+				5F8735E61A8B4867000CADF4 /* MotionBlurFilter.m */,
+				5F8735E71A8B4867000CADF4 /* UIView+MotionBlur.h */,
+				5F8735E81A8B4867000CADF4 /* UIView+MotionBlur.m */,
+			);
+			name = MotionBlur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F05E2721A83C70800DE7325 /* ViewController.m in Sources */,
+				5F8735EA1A8B4867000CADF4 /* UIView+MotionBlur.m in Sources */,
 				5F05E26F1A83C70800DE7325 /* AppDelegate.m in Sources */,
 				5FD648531A84B9A700E844B0 /* KYProgressLayer.m in Sources */,
 				5F05E26C1A83C70800DE7325 /* main.m in Sources */,
+				5F8735E91A8B4867000CADF4 /* MotionBlurFilter.m in Sources */,
 				5FD648561A84DCDE00E844B0 /* JellyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

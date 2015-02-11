@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "JellyView.h"
+#import "UIView+MotionBlur.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIView *sideHelperView;
@@ -42,6 +43,11 @@
         self.animationCount = 0;
     }
     return self;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.jellyView enableBlurWithAngle:M_PI_2 completion:nil];
 }
 
 
@@ -89,9 +95,6 @@
     }];
     
 
-
-
-    
     //方法二:使用-drawInContext:实时绘制
     /*
     KYProgressLayer *progresslayer = [KYProgressLayer layer];
