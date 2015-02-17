@@ -47,7 +47,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.jellyView enableBlurWithAngle:M_PI_2 completion:nil];
+//    [self.jellyView enableBlurWithAngle:M_PI_2 completion:nil];
 }
 
 
@@ -145,9 +145,7 @@
     NSLog(@"Center:%@",NSStringFromCGRect(centerRect));
     NSLog(@"Side:%@",NSStringFromCGRect(sideRect));
     
-
     CGFloat newJellyViewTopConstraint      =  position.y - CGRectGetMaxY(self.view.frame);
-
 
     self.jellyViewTopConstraint.constant = newJellyViewTopConstraint;
     [self.jellyView layoutIfNeeded];
