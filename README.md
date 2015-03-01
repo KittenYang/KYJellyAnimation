@@ -3,3 +3,5 @@
 
 
 ![](demo.gif)
+
+Intro:  [http://kittenyang.com/cadisplaylinkanduibezierpath/](http://kittenyang.com/cadisplaylinkanduibezierpath/)
